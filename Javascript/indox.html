@@ -1,0 +1,23 @@
+<script>
+function lw()
+{
+var x = document.getElementById("d1");
+x.style.color = "red";
+x.style.background = "grey";
+x.style.border = "5px groove blue"
+x.style.width = "100px";
+x.style.height = "100px";
+//var y = x.innerHTML;
+//alert(y);
+}
+</script>
+
+<body>
+
+
+<div id = "d1">this is para</div>
+<script>
+setTimeout(lw,5000);
+</script>
+<button onclick="lw()">click me</button>
+</body>

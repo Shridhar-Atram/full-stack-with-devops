@@ -1,0 +1,12 @@
+db.persons.aggregate(
+[
+    {$match: {gender:'male'}},
+    {$group:
+    {
+        _id: {mystate: "$location.state"},
+        totalMalePersons: {$sum: 1}
+      } 
+ },
+ {$sort: {totalMalePerson: -1}},
+ {$out: {db: "outfinaldb", coll: "finalcol"}}
+])

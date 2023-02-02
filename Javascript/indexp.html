@@ -1,0 +1,22 @@
+<script>
+function change()
+{
+    const x = document.getElementById("d1");
+    x.className = "newstyle";
+}
+</script>
+
+<style>
+.oldstyle{
+background: blueviolet;
+color: aqua;
+}
+.newstyle{
+    background: red;
+    color: aliceblue;
+}
+</style>
+<body>
+<div id="d1" class="oldstyle">Div 1</div>
+<button onclick="change()">Change</button>
+</body>

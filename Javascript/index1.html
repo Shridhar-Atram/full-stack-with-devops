@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Basic 2
+	</title>
+	<script type="text/javascript">
+	function fun()
+	{
+		var x = document.getElementById("d1");
+		//alert(x);
+		z = document.getElementById("d3");
+		//z.value = x.innerHTML;
+		x.innerHTML = z.value;
+	}
+		 	
+	</script>
+</head>
+<body>
+	<div id = 'd1'>First Id</div>
+	<div id = 'd2'>Second Id</div>
+	<input type="text" id = 'd3'  onkeypress="
+	fun()" name="" >
+	<br>
+	<input type="text" name="" >
+	<br>
+	<button onclick="fun()">Click Me</button>
+	
+
+
+
+</body>
+</html>

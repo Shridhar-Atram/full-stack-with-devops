@@ -1,0 +1,47 @@
+<style>
+img#m1 {
+width: 15%;
+height: 30%;
+}
+</style>
+
+<script>
+
+var h = 0;
+
+function imageInvisible() {
+
+	if(h == 0) {
+		var m = document.getElementById("m1");
+		m.style.visibility = "hidden";
+		var b = document.getElementById("d1");
+		b.innerHTML = "Visible Me";
+		h = 1;
+	}
+
+	else {
+		var m = document.getElementById("m1");
+		m.style.visibility = "visible";
+		var b = document.getElementById("d1");
+		b.innerHTML = "Hide Me";
+		h = 0;
+	}
+x = setTimeout(imageInvisible, 500);
+
+}
+
+function stopblink()
+{
+clearTimeout(x);
+}
+</script>
+
+<body onload='imageInvisible()'>
+<div id = "ig", style = "text-align : center ; background-color :blue">
+<img id="m1"  src="vimal1.jpg" />
+<br />
+<button  id="d1" onclick="imageInvisible()">Hide me</button>
+<button  id="d1" onclick="stopblink()">stop me</button>
+</div>
+
+</body>
